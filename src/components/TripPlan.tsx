@@ -84,7 +84,7 @@ export default function TripPlan() {
                         </div>
                     </div>
 
-                    <Button className="bg-[#113D48] hover:bg-[#113D48] transition-all duration-500 cursor-pointer rounded-2xl hover:pl-10 px-6 py-6  flex items-center gap-2">
+                    <Button className="bg-[#113D48] hover:bg-[#113D48] transition-all duration-500 cursor-pointer rounded-3xl hover:pl-10 px-6 py-6  flex items-center gap-2">
                         Learn More
                         <div
                             className="

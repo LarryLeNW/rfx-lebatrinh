@@ -1,10 +1,10 @@
 import { Facebook, Twitter, Linkedin, Youtube, Instagram, Send } from "lucide-react"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
-import { FaPhoneVolume } from 'react-icons/fa6';
 import { LuMail } from 'react-icons/lu';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { MdKeyboardArrowRight } from 'react-icons/md';
+import { FiPhoneCall } from 'react-icons/fi';
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 export default function Footer() {
     return (
@@ -88,7 +88,7 @@ export default function Footer() {
                         <div className="space-y-3">
                             <div className="flex items-center gap-3">
                                 <div className="bg-[#E9F6F9] w-9 h-9  rounded-full flex items-center justify-center mt-0.5">
-                                    <FaPhoneVolume color="#1CA8CB" />
+                                    <FiPhoneCall color="#1CA8CB" />
                                 </div>
                                 <div className="text-sm text-gray-500">
                                     <p>+01 234 567 890</p>

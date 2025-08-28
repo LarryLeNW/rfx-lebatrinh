@@ -96,13 +96,25 @@ export default function Banner() {
 
                         <motion.div className="flex gap-3" variants={textChild}>
                             <button
-                                className="px-6 py-2 bg-[#1CA8CB] text-white rounded-full transition
+                                className="px-4 py-2 bg-[#1CA8CB] text-white rounded-full transition
                            hover:shadow-lg hover:-translate-y-0.5 hover:scale-105
-                           active:translate-y-0 active:scale-95"
-                            >
-                                {banners[currentIndex].links[0]}
+                           active:translate-y-0 active:scale-95 flex items-center gap-2 cursor-pointer"
+                            >  <span>
+                                    {banners[currentIndex].links[0]}
+                                </span>
+                                <div className="group-hover:mr-2 transition-all">
+                                    <img src={ArrowIcon} alt="icon" className="w-5 h-auto" />
+                                </div>
                             </button>
-                            <button className="glass-button px-6 py-2 rounded-full">{banners[currentIndex].links[1]}</button>
+                            <button className="glass-button px-6 py-2 rounded-full flex items-center gap-2">
+                                <span>
+                                    {banners[currentIndex].links[1]}
+                                </span>
+                                <div className="group-hover:mr-2 transition-all">
+                                    <img src={ArrowIcon} alt="icon" className="w-5 h-auto" />
+                                </div>
+
+                            </button>
                         </motion.div>
                     </motion.div>
                 </AnimatePresence>

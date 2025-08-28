@@ -1,39 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import Header from './components/Header'
-import Banner from './components/Banner'
-import TourCategories from './components/TourCategories'
-import TopDestination from './components/TopDestination'
-import TripPlan from './components/TripPlan'
-import BestRecommend from './components/BestRecommend'
-import RecentGallery from './components/RecentGallery'
-import Statistic from './components/Statistic'
-import TourGuide from './components/TourGuide'
-import Testimonial from './components/Testimonial'
-import Brands from './components/Brand'
-import News from './components/News'
-import Footer from './components/Footer'
-import ScrollToTopButton from './components/ui/ScrollToTopButton'
-
+import Rfx from './components/Rfx';
+import A1 from './pages/A1';
+import A2 from './pages/A2';
+import A3 from './pages/A3'
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function App() {
-  return (
-    <div className='pt-[140px]'>
-      <Header></Header>
-      <Banner></Banner>
-      <TourCategories></TourCategories>
-      <TopDestination></TopDestination>
-      <TripPlan></TripPlan>
-      <BestRecommend></BestRecommend>
-      <RecentGallery></RecentGallery>
-      <Statistic></Statistic>
-      <TourGuide></TourGuide>
-      <Testimonial></Testimonial>
-      <Brands></Brands>
-      <News></News>
-      <Footer></Footer>
-      <ScrollToTopButton></ScrollToTopButton>
-    </div>
-  )
+  return <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<A1 />} />
+      <Route path="/a2" element={<A2 />} />
+      <Route path="/a3" element={<A3 />} />
+      <Route path="*" element={<A1 />} />
+    </Routes>
+    <Rfx></Rfx>
+  </BrowserRouter>
 }
 
 export default App

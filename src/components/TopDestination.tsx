@@ -125,8 +125,6 @@ export default function TopDestination() {
 
             const rotateY = direction * absPosition * 8
 
-            const opacity = absPosition === 2 ? 0.85 : 1 - absPosition * 0.12
-
             const blur = absPosition === 2 ? 0.3 : absPosition * 0.6
 
             const zIndex = 10 - absPosition
@@ -134,7 +132,6 @@ export default function TopDestination() {
             return {
                 transform: `translate3d(${translateX}px, ${translateY}px, 0) scale(${scale}) rotateY(${rotateY}deg)`,
                 zIndex,
-                opacity,
                 filter: `blur(${blur}px)`,
             }
         }
